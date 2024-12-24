@@ -34,7 +34,7 @@ export default function GalleryView({ images, title }: GalleryViewProps) {
           key={currentIndex}
           src={images[currentIndex]}
           alt={`Image ${currentIndex + 1}`}
-          className="absolute inset-0 w-full h-full object-cover"
+          className="absolute inset-0 w-full h-full object-contain"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
