@@ -9,7 +9,7 @@ interface ThemeItemProps {
   slug: string;
   imageUrl: string;
 }
-
+// Handles individual theme tiles and navigation
 export default function ThemeItem({ title, slug, imageUrl }: ThemeItemProps) {
   const router = useRouter();
 
@@ -18,6 +18,7 @@ export default function ThemeItem({ title, slug, imageUrl }: ThemeItemProps) {
       whileHover={{ scale: 1.02 }}
       transition={{ duration: 0.2 }}
       className="relative cursor-pointer group"
+      // When clicked, routes to /themes/[slug]
       onClick={() => router.push(`/themes/${slug}`)}
     >
       <div className="aspect-square relative overflow-hidden">

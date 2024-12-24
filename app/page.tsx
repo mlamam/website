@@ -1,4 +1,7 @@
+// @app/page.tsx
+
 import Header from '@/components/layout/Header';
+// import ThemeGrid from '@/components/gallery/ThemeGrid';
 import ThemeGrid from '@/components/layout/ThemeGrid';
 
 export default function Home() {

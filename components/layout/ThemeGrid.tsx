@@ -1,3 +1,4 @@
+// @components/layout/ThemeGrid
 import ThemeItem from './ThemeItem';
 
 const themes = [
@@ -13,6 +14,7 @@ const themes = [
   { title: 'DID YOU KNOW?', slug: 'did-you-know-2' },
 ];
 
+// This component creates the initial grid of themes
 export default function ThemeGrid() {
   return (
     <div className="grid grid-cols-5 gap-4 px-12 mt-12">

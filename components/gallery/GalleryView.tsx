@@ -1,9 +1,11 @@
+// @components/gallery/GalleryView.tsx
 'use client';
 
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, ChevronLeft, ChevronRight } from 'lucide-react';
+// import Image from 'next/image';
 
 interface GalleryViewProps {
   images: string[];
