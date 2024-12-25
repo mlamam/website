@@ -21,12 +21,12 @@ export default function ThemeItem({ title, slug, imageUrl }: ThemeItemProps) {
       // When clicked, routes to /themes/[slug]
       onClick={() => router.push(`/themes/${slug}`)}
     >
-      <div className="aspect-square relative overflow-hidden">
+      <div className="aspect-[16/9] relative overflow-hidden"> {/* Changed from aspect-square to aspect-[16/9] */}
         <Image
           src={imageUrl}
           alt={title}
           fill
-          className="object-cover"
+          className="object-contain" // Changed from object-cover to object-contain
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
         <div className="absolute inset-0 bg-black/20 transition-opacity opacity-0 group-hover:opacity-100" />

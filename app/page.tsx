@@ -6,7 +6,7 @@ import { playfair } from '@/app/fonts';
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-mainBg">
       <div className="px-12">
         <Header />
         <div className="mt-12">
